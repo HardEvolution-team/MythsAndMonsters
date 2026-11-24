@@ -102,7 +102,7 @@ public class EntityDendroid extends EntityMob implements IRangedAttackMob {
    }
 
    protected void dropFewItems(boolean par1, int par2) {
-      Random rand = new Random();
+      Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
       int randomNumber = rand.nextInt(4);
       if (randomNumber == 1) {
          if (!this.isBurning() && !this.setfire) {

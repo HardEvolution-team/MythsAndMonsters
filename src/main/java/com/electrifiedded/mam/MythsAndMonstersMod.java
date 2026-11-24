@@ -32,7 +32,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:archaiclib@[1.29.0,)", guiFactory = "com.electrifiedded.mam.gui.GUIConfigFactory")
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, dependencies = "required-after:archaiclib@[1.40.0,)", guiFactory = "com.electrifiedded.mam.gui.GUIConfigFactory")
 public class MythsAndMonstersMod {
    public static final String ORIGINAL_NAME = "modid_1.7.10_1.0.0.jar - Myths & Monsters Mod 1.0.0 for 1.7.10 (by HoopAWolf)";
    public static final String ORIGINAL_URL = "https://www.curseforge.com/minecraft/mc-mods/search?search=myths+monsters";

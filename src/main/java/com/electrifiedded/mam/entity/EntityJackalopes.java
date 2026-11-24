@@ -78,7 +78,7 @@ public class EntityJackalopes extends EntityAnimal {
          }
 
          if (this.timerSound <= 0 && this.makeSound) {
-            Random rand = new Random();
+            Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
             int randomNumber = rand.nextInt(9);
             if (randomNumber == 1) {
                LegacyWorld.playSoundAtEntity(this.world, entity1, "mob.chicken.say", 1.0F, 1.0F);

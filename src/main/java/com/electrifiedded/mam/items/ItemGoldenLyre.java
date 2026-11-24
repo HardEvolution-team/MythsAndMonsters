@@ -16,7 +16,7 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 public class ItemGoldenLyre extends LegacyItem {
-   Random rand = new Random();
+   Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
    int tick = 0;
 
    public ItemGoldenLyre() {

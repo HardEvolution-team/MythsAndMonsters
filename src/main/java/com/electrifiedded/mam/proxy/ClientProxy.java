@@ -20,7 +20,7 @@ import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 public class ClientProxy extends CommonProxy {
-   private static final Random RAND = new Random();
+   private static final Random RAND = new com.electrifiedded.archaiclib.util.FastRandom();
 
    private static ResourceLocation tex(String name) {
       return new ResourceLocation("mam", "textures/entity/" + name.toLowerCase() + ".png");

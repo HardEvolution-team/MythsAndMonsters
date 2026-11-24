@@ -90,7 +90,7 @@ public class EntityDropBear extends EntityMob implements ILegacyCreature {
       }
 
       if (!this.isInWater()) {
-         Random rand = new Random();
+         Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
          int randomNumber = rand.nextInt(20);
          int randomYNumber = rand.nextInt(2);
          int randomPosX = (int)this.posX + randomNumber;

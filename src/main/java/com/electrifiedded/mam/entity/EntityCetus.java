@@ -136,7 +136,7 @@ public class EntityCetus extends EntityWaterMob implements IAnimals {
       }
 
       if (!this.isInWater()) {
-         Random rand = new Random();
+         Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
          int randomNumber = rand.nextInt(5);
          int randomYNumber = rand.nextInt(2);
          int randomPosX = (int)this.posX + randomNumber;
