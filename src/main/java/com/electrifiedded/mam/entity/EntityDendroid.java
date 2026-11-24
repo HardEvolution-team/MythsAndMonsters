@@ -102,6 +102,8 @@ public class EntityDendroid extends EntityMob implements IRangedAttackMob {
    }
 
    protected void dropFewItems(boolean par1, int par2) {
+      // 1.7 EntityLiving.onDeath: rare drop when recently hit, 2.5% (+ looting)
+      if (par1 && this.rand.nextInt(200) - par2 < 5) this.dropRareDrop(1);
       Random rand = new com.electrifiedded.archaiclib.util.FastRandom();
       int randomNumber = rand.nextInt(4);
       if (randomNumber == 1) {

@@ -28,7 +28,11 @@ public class ItemGoldenBow extends LegacyItem {
       this.maxStackSize = 1;
       this.setMaxDamage(384);
       this.setTranslationKey("goldbow");
-      RegistryHelper.setTexture(this, "mam:ItemGoldBow");
+      // 1.7 swapped the icon in onUpdate (ItemGoldBow / 1 / 2 / 3 at 0 / 14 / 18 ticks); 1.12: json overrides on pull/pulling
+      this.addPropertyOverride(new net.minecraft.util.ResourceLocation("pull"), (stack, world, entity) ->
+         entity == null || entity.getActiveItemStack().getItem() != this ? 0.0F : (stack.getMaxItemUseDuration() - entity.getItemInUseCount()) / 20.0F);
+      this.addPropertyOverride(new net.minecraft.util.ResourceLocation("pulling"), (stack, world, entity) ->
+         entity != null && entity.isHandActive() && entity.getActiveItemStack() == stack ? 1.0F : 0.0F);
       this.setCreativeTab(MythsAndMonstersMod.tabMythsAndMonsters);
    }
 

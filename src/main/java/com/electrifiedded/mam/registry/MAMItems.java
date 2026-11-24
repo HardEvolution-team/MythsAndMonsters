@@ -155,6 +155,7 @@ public abstract class MAMItems {
       RegistryHelper.registerItem(dendroidchakramprojectile);
       goldbow = new ItemGoldenBow();
       RegistryHelper.registerItem(goldbow);
+      com.electrifiedded.archaiclib.legacy.registry.LegacyGameRegistry.registerItemModel(goldbow, 0, "mam:mam_goldbow", "inventory");
       goldarrow = new ItemGoldenArrow();
       RegistryHelper.registerItem(goldarrow);
       marrowsword = new ItemMarrowSword();
